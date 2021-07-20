@@ -1,0 +1,48 @@
+
+header {
+    background-color: #e5d5ed;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+}
+
+ul.header-list {
+    margin: 0 50px 0 0 ;
+
+
+}
+
+ul.header-list li {
+    display: inline;
+    float: right;
+    margin: 0 20px 0 0 ;
+}
+
+
+main {
+    background-color: #d0dbe7;
+    padding-top: 100px;
+    height: 1000px;
+}
+
+div.main-item {
+    display: grid;
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding : 24px 24px 0 24px;
+}
+
+div#left-item {
+    padding: 16px;
+    width: 80px;
+} 
+
+aside {
+    background-color: #dad9e6;
+}
+
+footer {
+    background-color: #d1d8da;
+    height: 500px;
+}
