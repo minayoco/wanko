@@ -20,9 +20,10 @@ ul.header-list li {
 
 
 main {
-    background-color: #d0dbe7;
+    background-color: #fff;
     padding-top: 100px;
     height: 1000px;
+
 }
 
 div.main-item {
