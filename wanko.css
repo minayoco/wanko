@@ -1,4 +1,9 @@
 
+
+div {
+    display: block;
+}
+
 header {
     background-color: #e5d5ed;
     position: fixed;
@@ -18,12 +23,14 @@ ul.header-list li {
     margin: 0 20px 0 0 ;
 }
 
+div#main-wrapper {
+    background-color: #f6f6f4;
+}
 
-main {
+div#main {
     background-color: #fff;
     padding-top: 100px;
     height: 1000px;
-
 }
 
 div.main-item {
@@ -32,12 +39,28 @@ div.main-item {
     margin-right: auto;
     margin-left: auto;
     padding : 24px 24px 0 24px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 
-div#left-item {
+div.left-item {
     padding: 16px;
     width: 80px;
+    grid-area: 1 / 1 / 2 / 2;
 } 
+
+div.center-item {
+    padding: 16px;
+    grid-area: 1 / 2 / 2 / 4;
+}
+
+div.right-item {
+    grid-area: 1 / 4 / 2 / 5; 
+}
 
 aside {
     background-color: #dad9e6;
