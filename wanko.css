@@ -51,6 +51,8 @@ div.left-item {
     padding: 16px;
     width: 80px;
     grid-area: 1 / 1 / 2 / 2;
+    position: sticky;
+    top: calc(56px + 24px + 16px + 32px - 16px);
 } 
 
 div.center-item {
