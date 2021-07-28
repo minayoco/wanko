@@ -54,7 +54,6 @@ div.left-item {
     position: sticky;
     top: calc(56px + 24px + 16px + 32px - 16px);
     scroll-snap-align: start;
-    
 } 
 
 div.center-item {
