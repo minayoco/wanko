@@ -4,6 +4,10 @@ div {
     display: block;
 }
 
+@media screen and (min-width: 600px) {
+}
+
+
 header {
     background-color: #e5d5ed;
     position: fixed;
@@ -34,20 +38,20 @@ div#main {
     scroll-snap-type: y;
 }
 
-div.main-item {
+div.contents-wrapper {
     max-width: 1280px;
     margin-right: auto;
     margin-left: auto;
     padding : 24px 24px 0 24px;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
-div.left-item {
+div.sns-contents {
     padding: 16px;
     width: 80px;
     grid-area: 1 / 1 / 2 / 2;
@@ -56,13 +60,13 @@ div.left-item {
     scroll-snap-align: start;
 } 
 
-div.center-item {
+div.text-contents {
     padding: 16px;
-    grid-area: 1 / 2 / 2 / 4;
+    grid-area: 1 / 2 / 2 / 4; 
 }
 
-div.right-item {
-    grid-area: 1 / 4 / 2 / 5; 
+div.news-contents {
+    grid-area: 1 / 4 / 2 / 5;
 }
 
 aside {
@@ -72,4 +76,39 @@ aside {
 footer {
     background-color: #d1d8da;
     height: 500px;
+}
+
+
+@media screen and (max-width: 599px) {
+    div.contents-wrapper {
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        padding : 24px 24px 0 24px;
+    }
+
+    div.sns-contents {
+        padding: 16px;
+        width: 100%;
+        
+    } 
+    
+    div.text-contents {
+        padding: 16px;
+        width: 100%;
+        
+    }
+    
+    div.news-contents {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 599px) {
+
+    h1.wanko {
+        color: blue;
+    }
 }
