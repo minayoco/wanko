@@ -105,10 +105,11 @@ footer {
 
 }
 
-
+/* スマホ用デザイン利かせたい */
 @media (max-width: 599px) {
 
-    h1.wanko {
-        color: blue;
-    }
+    div#main { background-color: skyblue;}
 }
+
+/* できた */
+/* 原因：meta name="viewport" htmlにを記述していなかった */
