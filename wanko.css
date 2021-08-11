@@ -21,13 +21,13 @@ header {
 
 ul.header-list {
     margin: 0 50px 0 0 ;
-
+    float: right; /* ulを右寄せに */
 
 }
 
 ul.header-list li {
     display: inline;
-    float: right;
+    float: left; /* 縦並びのliを左から横並びに */
     margin: 0 20px 0 0 ;
 }
 
