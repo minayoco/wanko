@@ -1,4 +1,8 @@
 
+html {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
 
 div {
     display: block;
@@ -55,8 +59,8 @@ div.sns-contents {
     padding: 16px;
     width: 80px;
     grid-area: 1 / 1 / 2 / 2;
-    position: sticky;
-    top: calc(56px + 24px + 16px + 32px - 16px);
+    position: sticky; /* 止める要素 */
+    top: calc(56px + 24px + 16px + 32px - 16px); /* 止める要素 */
     scroll-snap-align: start;
 } 
 
@@ -67,8 +71,8 @@ div.text-contents {
 
 div.news-contents {
     grid-area: 1 / 5 / 2 / 6;
-    position: sticky;
-    top: calc(56px + 24px + 16px + 32px - 16px);
+    position: sticky; /* 止める要素 */
+    top: calc(56px + 24px + 16px + 32px - 16px); /* 止める要素 */
     scroll-snap-align: start;
 }
 
