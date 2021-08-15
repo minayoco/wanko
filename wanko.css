@@ -3,12 +3,8 @@ html {
     font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
-
 div {
     display: block;
-}
-
-@media screen and (min-width: 600px) {
 }
 
 header {
@@ -112,7 +108,9 @@ p.copyright {
         padding: 10px 10px;
     }
 
-    div#main { background-color: skyblue;}
+    div#main {
+        background-color: #f7fcfc;
+    }
 
     div.sns-contents {
         padding: 0;
