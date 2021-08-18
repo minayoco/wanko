@@ -14,120 +14,49 @@ header {
     border-bottom: 1px solid #d8d8d8;
     box-shadow: 0 1px 1px 0 rgb(140 140 140 / 15%);
     width: 100%;
+    height: 60px;
     padding: 20px;
 }
 
-/* ハンバーガーボタン */
-.hamburger {
-    display : block;
-    position: fixed;
-    z-index : 3;
-    right : 13px;
-    top   : 12px;
-    width : 42px;
-    height: 42px;
-    cursor: pointer;
-    text-align: center;
-  }
-
-  .hamburger span {
-    display : block;
-    position: absolute;
-    width   : 30px;
-    height  : 2px ;
-    left    : 6px;
-    background : #555;
-    -webkit-transition: 0.3s ease-in-out;
-    -moz-transition   : 0.3s ease-in-out;
-    transition        : 0.3s ease-in-out;
-  }
-  .hamburger span:nth-child(1) {
-    top: 10px;
-  }
-  .hamburger span:nth-child(2) {
-    top: 20px;
-  }
-  .hamburger span:nth-child(3) {
-    top: 30px;
-  }
-  
-  /* ナビ開いてる時のボタン */
-  .hamburger.active span:nth-child(1) {
-    top : 16px;
-    left: 6px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform   : rotate(-45deg);
-    transform        : rotate(-45deg);
-  }
-  
-  .hamburger.active span:nth-child(2),
-  .hamburger.active span:nth-child(3) {
-    top: 16px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform   : rotate(45deg);
-    transform        : rotate(45deg);
-  }
-  
-  nav.header-list {
-    position: fixed;
-    z-index : 2;
-    top  : 0;
-    left : 0;
-    color: #000;
-    background: #fff;
-    text-align: center;
-    transform: translateX(100%);
-    transition: all 0.6s;
-    width: 100%;
-  }
-  
-  nav.header-list ul {
-    background: #ccc;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-  }
-  
-  nav.header-list ul li {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    border-bottom: 1px solid #fff;
-  }
-  nav.header-list ul li:last-child {
-    padding-bottom: 0;
-    border-bottom: none;
-  }
-  nav.header-list ul li:hover{
-    background :#ddd;
-  }
-  
-  nav.header-list ul li a {
-    display: block;
-    color: #000;
-    padding: 1em 0;
-    text-decoration :none;
-  }
-  
-  /* このクラスを、jQueryで付与・削除する */
-  nav.header-list.active {
-    transform: translateX(0%);
-  }
-
-/* ハンバーガーボタン ここまで */
-
-ul.header-list {
-    margin: 0 50px 0 0 ;
+nav.pc-header-list ul,
+nav.sp-header-list ul {
+    display: flex;
+    list-style: none;
     float: right; /* ulを右寄せに */
-
-
+}
+/*** ハンバーガーメニューの設定 ***/
+nav.sp-header-list ul {
+    display: none; /* ヘッダーのspハンバーガーメニューを非表示 */
 }
 
-ul.header-list li {
-    display: inline;
-    float: left; /* 縦並びのliを左から横並びに */
-    margin: 0 20px 0 0 ;
+@media (max-width: 768px) {
+
+    nav.pc-header-list ul {
+        display: none; /* ヘッダーのpcメニューを非表示 */
+    }
+
+    #hamburger {
+        background-color: transparent; /* 背景を透明に */
+        position: relative; /* ハンバーガーの横線の位置を決めるための基準 */
+        cursor: pointer; /* カーソルを表示（指差しマーク） */
+        margin: 0 0 0 auto; /* 左側に余白を作り、ハンバーガーメニューを右端に配置 */
+        height: 60px; /* ヘッダーの高さと同じ */
+        width: 60px; /* 高さと同じ */
+
+    }
+
+    .icon span {
+        position: absolute; /* 親要素の#hamburgerを基準に位置を指定 */
+        left: 15px; /* #hamburgerの内側左から15pxに横線を配置（幅60pxなので右からも15px） */
+        width: 30px; /* 横線の幅 */
+        height: 4px; /* 横線の高さ */
+        background-color: violet; /*  横線の色 */
+        border-radius: 8px; /* 角を丸く */
+        transition: ease 0.75s; /* 変化の時間（easeは初期値） */
+    }
 }
+
+/*** ハンバーガーメニュー ここまで ***/
 
 div#main {
     background-color: #f7fcfc;
