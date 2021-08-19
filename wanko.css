@@ -54,6 +54,31 @@ nav.sp-header-list ul {
         border-radius: 8px; /* 角を丸く */
         transition: ease 0.75s; /* 変化の時間（easeは初期値） */
     }
+
+    /* ハンバーガーの線 */
+    .icon span:nth-of-type(1) {
+        top: 16px;
+      }
+      .icon span:nth-of-type(2) {
+        top: 28px;
+      }
+      .icon span:nth-of-type(3) {
+        bottom: 16px;
+      }
+
+      .close span:nth-of-type(1) {
+        transform: rotate(45deg); /*反時計回りに45度回転*/
+        top: 28px;
+      }
+    
+      .close span:nth-of-type(2) {
+        opacity: 0;
+      }
+    
+      .close span:nth-of-type(3) {
+          transform: rotate(-45deg); /*時計回りに45度回転*/
+          top: 28px;
+      }
 }
 
 /*** ハンバーガーメニュー ここまで ***/
