@@ -18,6 +18,10 @@ header {
     padding: 20px;
 }
 
+div#header-title {
+    float: left;
+}
+
 nav.pc-header-list ul,
 nav.sp-header-list ul {
     display: flex;
@@ -103,16 +107,6 @@ div.contents-wrapper {
     grid-row-gap: 0px;
 }
 
-div.sns-contents {
-    padding: 16px;
-    width: 80px;
-    grid-area: 1 / 1 / 2 / 2;
-    position: sticky; /* 止める要素 要素はフロートする*/ 
-    position: -webkit-sticky; /* Safari ではプレフィックス（-webkit）を加える必要がある*/
-    /* 要素を定義すると、自動的に親要素（div.contents-wrapper）がスティッキーコンテナとして定義される*/
-    top: calc(56px + 24px + 16px + 32px - 16px); /* 止める要素 */
-} 
-
 div.sns-contents li {
     padding: 0 0 10px 0;
 }
@@ -147,11 +141,16 @@ footer {
     padding: 10px 10px;
 }
 
+div.sns-contents {
+    display: flex;
+    list-style: none;
+} 
+
 p.copyright {
     text-align: center;
 }
 
-/* スマホ用デザイン利かせたい */
+ スマホ用デザイン利かせたい */
 @media (max-width: 599px) {
 
     header {
