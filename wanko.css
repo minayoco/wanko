@@ -154,7 +154,7 @@ p.copyright {
     text-align: center;
 }
 
- スマホ用デザイン利かせたい */
+ /* スマホ用デザイン利かせたい */
 @media (max-width: 599px) {
 
     header {
