@@ -144,9 +144,25 @@ div.parts h2 {
   margin: 2.8em 0 .5em;
   padding: 0.5em;/*文字周りの余白*/
   color: #494949;/*文字色*/
-  background: #fffaf4;/*背景色*/
-  border-left: solid 5px #ffaf58;/*左線（実線 太さ 色）*/
+  background: #ecf6f9;/*背景色*/
+  border-left: solid 5px #85c9d6;/*左線（実線 太さ 色）*/
   font-size: 1.4em;
+  width: fit-content;/*これつけると背景が文字の長さになる*/
+}
+
+div.parts-example {
+    padding: 20px;
+    color: #494949;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border: dashed 2px #85c9d6;
+}
+
+p#font {
+    background-color: #cee8f0;
+    color: #fff;
+    font-size: 100px;
+    font-family: none;
+    text-shadow:1.5px 1.5px 0 black,-1.5px 1.5px 0 black,1.5px -1.5px 0 black,-1.5px -1.5px 0 black;
 }
 
 footer {
