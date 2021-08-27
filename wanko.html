@@ -87,7 +87,9 @@
 
                         <div class="parts">
                             <h2>font</h2>
-                            <p>文字のフチが気になったので</p>
+                            <p>文字のフチが気になったので<br>
+                            よこ、たて、ぼかし<br>
+                            正の数：右 下、 負の数：-左 -上</p>
                             <div class="parts-example">
                                 <p id="font">わんこの練習</p>
                             </div>
@@ -95,9 +97,19 @@
 
                         <div class="parts">
                             <h2>tabindex属性</h2>
-                            <p></p>
+                            <p>tabindex属性は、要素のタブインデックスを指定するグローバル属性<br>
+                                正の整数：タブによる移動順序を示す。タブ移動時、指定した数値の順にフォーカスする。<br>
+                                クリックによるフォーカスもできる。<br>
+                                負の整数：タブ移動時にフォーカスしない。クリックによるフォーカスはできる。<br>
+                                0：タブ移動時、ドキュメントにおける相対的な順番でフォーカスする。<br>
+                                クリックによるフォーカスもできる。</p>
                             <div class="parts-example">
-                                
+                            <div class="tabindex-parts-example">
+                                <label>1<input type="text"></label>
+                                <div tabindex="0">2（tabindexあり）</div>
+                                <div>tabindexなし</div>
+                                <label>3<input type="text"></label>  
+                            </div>
                             </div>
                         </div>
 
