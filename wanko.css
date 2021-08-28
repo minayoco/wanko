@@ -95,7 +95,6 @@ nav.sp-header-list ul {
 div#main {
     background-color: #f7fcfc;
     padding-top: 60px;
-    height: 1000px;
     scroll-snap-type: y;
 }
 
