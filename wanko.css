@@ -139,7 +139,7 @@ aside {
     background-color: #dad9e6;
 }
 
-div.parts h2 {
+div.parts h2.html-title {
   margin: 2.8em 0 .5em;
   padding: 0.5em;/*文字周りの余白*/
   color: #494949;/*文字色*/
