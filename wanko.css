@@ -110,7 +110,8 @@ div.contents-wrapper {
     grid-column-gap: 0px;
     grid-row-gap: 0px; */
 
-    /* gridを使わないで表示 */
+    /* gridを使わないで表示させたい */
+    display: flex;
 }
 
 div.sns-contents li {
