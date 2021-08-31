@@ -1,6 +1,7 @@
 
 html {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #383838;/*文字色*/
 }
 
 div {
@@ -103,11 +104,13 @@ div.contents-wrapper {
     margin-left: auto;
     padding : 24px 24px 0 24px;
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-row-gap: 0px; */
+
+    /* gridを使わないで表示 */
 }
 
 div.sns-contents li {
@@ -124,11 +127,11 @@ div.text-contents {
     border: 1px solid #fff;
     border-radius: 3px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
-    grid-area: 1 / 2 / 2 / 5; 
+    /* grid-area: 1 / 2 / 2 / 5; */
 }
 
 div.news-contents {
-    grid-area: 1 / 5 / 2 / 6;
+    /* grid-area: 1 / 5 / 2 / 6; */
     position: sticky; /* 止める要素 */
     position: -webkit-sticky; /* Safariプレフィックス（-webkit）を加える必要がある */
     top: calc(56px + 24px + 16px + 32px - 16px); /* 止める要素 */
@@ -137,6 +140,10 @@ div.news-contents {
 
 aside {
     background-color: #dad9e6;
+}
+
+div.parts p {
+    line-height: 1.8;
 }
 
 div.parts h2.html-title {
@@ -149,15 +156,34 @@ div.parts h2.html-title {
   width: fit-content;/*これつけると背景が文字の長さになる*/
 }
 
-div.parts-example {
+div.parts h2.css-title {
+    margin: 2.8em 0 .5em;
+    padding: 0.5em;/*文字周りの余白*/
+    color: #494949;/*文字色*/
+    background: #e7e4f1;/*背景色*/
+    border-left: solid 5px #978ac2;/*左線（実線 太さ 色）*/
+    font-size: 1.4em;
+    width: fit-content;/*これつけると背景が文字の長さになる*/
+  }
+
+div.html-parts-example {
+    margin-top: 0.5em;
     padding: 20px;
     color: #494949;/*文字色*/
     /*線の種類（点線）2px 線色*/
     border: dashed 2px #85c9d6;
 }
 
+div.css-parts-example {
+    margin-top: 0.5em;
+    padding: 20px;
+    color: #494949;/*文字色*/
+    /*線の種類（点線）2px 線色*/
+    border: dashed 2px #978ac2;
+}
+
 p#font {
-    background-color: #cee8f0;
+    background-color: #c5bedd;
     color: #fff;
     font-size: 100px;
     font-family: none;
