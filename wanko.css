@@ -93,10 +93,16 @@ nav.sp-header-list ul {
 
 /*** ハンバーガーメニュー ここまで ***/
 
-div#main {
+div#main-wrapper {
     background-color: #f7fcfc;
-    padding-top: 60px;
+}
+
+div#main {
+    padding: 60px 0 60px 0;
     scroll-snap-type: y;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 div.contents-wrapper {
@@ -129,6 +135,7 @@ div.text-contents {
     border-radius: 3px;
     box-shadow: 0 1px 2px rgb(0 0 0 / 20%);
     /* grid-area: 1 / 2 / 2 / 5; */
+    width: 75%;/* gridを使わないで表示させたい */
 }
 
 div.news-contents {
@@ -137,6 +144,7 @@ div.news-contents {
     position: -webkit-sticky; /* Safariプレフィックス（-webkit）を加える必要がある */
     top: calc(56px + 24px + 16px + 32px - 16px); /* 止める要素 */
     margin: 20px;
+    width: 25%;/* gridを使わないで表示させたい */
 }
 
 aside {
@@ -195,6 +203,16 @@ p#font {
     display: block;
     letter-spacing: .5px;
     margin-bottom: 1rem;
+}
+
+div.dropzone {
+    width: 500px;
+	padding: 2em;
+	margin: 0.5em;
+	border: 1px solid gray;
+	border-radius: 6px;
+	background-color:#ecf6f9;
+	text-align: center;
 }
 
 footer {
