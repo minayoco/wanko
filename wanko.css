@@ -176,7 +176,7 @@ label {
 }
 
 input {
-    /* display: none; */
+    display: none;
 }
 
 .menu ul {
@@ -196,7 +196,9 @@ input {
     transition: all 0.5s;
 }
 
-input.menu-bar:checked ~ ul.menu-bar-links li {
+input.menu-bar1:checked ~ ul.menu-bar-links1 li,
+input.menu-bar2:checked ~ ul.menu-bar-links2 li,
+input.menu-bar3:checked ~ ul.menu-bar-links3 li {
     height: 54px;
     opacity: 1;
 }
