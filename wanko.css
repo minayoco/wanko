@@ -176,8 +176,9 @@ label {
 }
 
 input {
-    display: none;
+    /* display: none; */
 }
+/* 大見出しを押してもチェックが入らない */
 
 .menu ul {
     margin: 0;
