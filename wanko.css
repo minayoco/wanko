@@ -210,6 +210,7 @@ div.parts p {
     line-height: 1.8;
 }
 
+/* パーツタイトル　*/
 div.parts h2.title {
   margin: 2.8em 0 .5em;
   padding: 0.5em;/*文字周りの余白*/
@@ -228,20 +229,19 @@ div.parts h2.css-parts {
     border-left: solid 5px #978ac2;/*左線（実線 太さ 色）*/
   }
 
-div.html-parts-example {
+  /* パーツサンプル 枠　*/
+div.parts-example {
     margin-top: 0.5em;
     padding: 20px;
     color: #494949;/*文字色*/
-    /*線の種類（点線）2px 線色*/
-    border: dashed 2px #85c9d6;
 }
 
-div.css-parts-example {
-    margin-top: 0.5em;
-    padding: 20px;
-    color: #494949;/*文字色*/
-    /*線の種類（点線）2px 線色*/
-    border: dashed 2px #978ac2;
+div.html-parts {
+    border: dashed 2px #85c9d6;/*線の種類（点線）2px 線色*/
+}
+
+div.css-parts {
+    border: dashed 2px #978ac2;/*線の種類（点線）2px 線色*/
 }
 
 p#font {
