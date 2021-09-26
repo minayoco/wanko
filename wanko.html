@@ -227,16 +227,16 @@
                                         <code class="lang-html">
 &lt;!-- 書字方向を切り替える --&gt;
 &lt;p&gt;わんこのサイト&lt;/p&gt;
-                                            &lt;code class="test"&gt;
-      &lt;!-- このエリアに、独自タグから実際に出力されるソースコードを貼り付ける --&gt;&lt;!-- なお、このエリアはブラウザでの横スクロールを可能にしています --&gt;
-   &lt;/code&gt;
-
-
+&lt;p&gt;&lt; bdo dir="rtl"&gt;わんこのサイト &lt;/bdo&gt;&lt;/p&gt;
+&lt;!-- rtl（右から左）もしくは ltr（左から右）の指定が必須！ --&gt;
                                         </code>
                                     </pre>
                                 </div>
                                 <div class="parts-example html-parts">
-                                    HTMLの実際の表示例
+                                    <!-- 書字方向を切り替える -->
+                                    <p>わんこのサイト</p>
+                                    <p><bdo dir="rtl">わんこのサイト</bdo></p>
+                                    <!-- rtl（右から左）もしくは ltr（左から右）の指定が必須！ -->
                                 </div>
                             </div>
 
