@@ -151,7 +151,7 @@ aside.sidebar {
 div.menu {
     background-color: #fff;
     /* grid-area: 1 / 5 / 2 / 6; */
-    position: sticky; /* 止める要素 */
+    /* position: sticky; /* 止める要素 */
     position: -webkit-sticky; /* Safariプレフィックス（-webkit）を加える必要がある */
     top: calc(56px + 24px + 16px + 32px - 16px); /* 止める要素 */
     margin-right: 20px;
